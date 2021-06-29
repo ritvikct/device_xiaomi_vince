@@ -23,7 +23,7 @@ PRODUCT_SHIPPING_API_LEVEL := 25
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
