@@ -177,6 +177,10 @@ persist.vendor.dpmhalservice.enable=1 \
 persist.vendor.dpm.loglevel=0 \
 persist.vendor.mwqem.enable=1
 
+# DHA Tunning
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.config.dha_tunnable=1
+
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
 drm.service.enabled=true
@@ -318,6 +322,11 @@ ro.soc.model=MSM8953
 # System
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.binary_xml=false
+
+# Smoothens UI
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.service.lgospd.enable=0 \
+persist.service.pcsync.enable=0
 
 # Telephony
 PRODUCT_PROPERTY_OVERRIDES += \
