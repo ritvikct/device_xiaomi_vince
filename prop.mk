@@ -2,7 +2,7 @@
 #
 
 # ART
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
 dalvik.vm.boot-dex2oat-threads=8 \
 dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
@@ -18,7 +18,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 persist.sys.sf.disable_blurs=1
 
 # Dalvik
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 dalvik.vm.heapstartsize=16m \
 dalvik.vm.heapgrowthlimit=256m \
 dalvik.vm.heapsize=512m \
@@ -27,7 +27,7 @@ dalvik.vm.heapminfree=4m \
 dalvik.vm.heapmaxfree=8m
 
 # Audio
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 af.fast_track_multiplier=2 \
 audio.offload.disable=true \
 audio.offload.min.duration.secs=30 \
@@ -61,7 +61,7 @@ vendor.voice.record.conc.disabled=false \
 vendor.voice.voip.conc.disabled=true
 
 # Audio dynamic feature flags
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 vendor.audio.feature.snd_mon.enable=true \
 vendor.audio.feature.compr_cap.enable=false \
 vendor.audio.feature.hifi_audio.enable=true \
@@ -104,17 +104,17 @@ vendor.audio.feature.multi_voice_session.enable=true \
 vendor.audio.feature.incall_music.enable=false
 
 # Bluetooth
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 persist.vendor.service.bdroid.sibs=false \
 vendor.qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7
 
 # Boot
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 sys.vendor.shutdown.waittime=500
 
 # Camera
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 camera.display.lmax=1280x720 \
 camera.display.umax=1920x1080 \
 camera.lowpower.record.enable=1 \
@@ -133,7 +133,7 @@ persist.vendor.camera.CDS=off \
 persist.vendor.camera.video.CDS=off
 
 # Cne
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 persist.vendor.cne.feature=1
 
 # Coresight
@@ -145,7 +145,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
 ro.config.dha_tunnable=1
 
 # Display
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 debug.composition.type=c2d \
 debug.cpurend.vsync=false \
 debug.egl.hw=1 \
@@ -190,7 +190,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ro.config.dha_tunnable=1
 
 # DRM
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 drm.service.enabled=true
 
 # Fast App Launch
@@ -198,15 +198,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 persist.device_config.runtime_native.usap_pool_enabled=true
 
 # Fingerprint
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_PROPERTIES += \
 persist.qfp=false
 
 # Fm
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_PROPERTIES += \
 ro.fm.transmitter=false
 
 # Frp
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 
 # Gboard
@@ -215,11 +215,11 @@ ro.com.google.ime.kb_pad_port_b=1 \
 ro.com.google.ime.corner_key_r=35
 
 # Logging
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 ro.control_privapp_permissions=log
 
 # Media
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 av.debug.disable.pers.cache=1 \
 debug.stagefright.omx_default_rank=0 \
 media.msm8956hw=0 \
@@ -237,19 +237,19 @@ vendor.vidc.enc.disable_bframes=1 \
 vendor.video.disable.ubwc=1
 
 # Perf
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 ro.vendor.perf.scroll_opt=true \
 ro.sys.fw.dex2oat_thread_count=8 \
 ro.vendor.extension_library=libqti-perfd-client.so
 
 # Netmgrd
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 ro.vendor.use_data_netmgrd=true \
 persist.data.netmgrd.qos.enable=true \
 persist.vendor.data.mode=concurrent
 
 # Nitz
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 persist.vendor.radio.nitz_plmn="" \
 persist.vendor.radio.nitz_lons_0="" \
 persist.vendor.radio.nitz_lons_1="" \
@@ -261,12 +261,11 @@ persist.vendor.radio.nitz_sons_2="" \
 persist.vendor.radio.nitz_sons_3=""
 
 # Qualcomm
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.vendor.qti.va_aosp.support=1 \
-ro.vendor.qti.va_odm.support=1
+PRODUCT_VENDOR_PROPERTIES += \
+ro.vendor.qti.va_aosp.support=1
 
 # Radio
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 persist.radio.multisim.config=dsds \
 persist.vendor.radio.add_power_save=1 \
 persist.vendor.radio.apm_sim_not_pwdn=1 \
@@ -279,7 +278,7 @@ rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
 vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
 
 # Radio (IMS)
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 service.qti.ims.enabled=1 \
 persist.dbg.volte_avail_ovr=1 \
 persist.dbg.vt_avail_ovr=1 \
@@ -292,7 +291,7 @@ persist.vendor.ims.disableSigHandler=1 \
 persist.vendor.ims.disableQXDMLogs=1
 
 # SurfaceFlinger
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 debug.sf.use_phase_offsets_as_durations=1 \
 debug.sf.late.sf.duration=10500000 \
 debug.sf.late.app.duration=20500000 \
@@ -321,7 +320,7 @@ ro.soc.manufacturer=QTI \
 ro.soc.model=MSM8953
 
 # System
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_PROPERTIES += \
 persist.sys.binary_xml=false
 
 # Smoothens UI
@@ -330,7 +329,7 @@ persist.service.lgospd.enable=0 \
 persist.service.pcsync.enable=0
 
 # Telephony
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 DEVICE_PROVISIONED=1 \
 persist.rild.nitz_long_ons_0= \
 persist.rild.nitz_long_ons_1= \
@@ -354,15 +353,15 @@ persist.service.lgospd.enable=0 \
 persist.service.pcsync.enable=0
 
 # Time Services
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 persist.vendor.delta_time.enable=true
 
 # Tcp
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 net.tcp.2g_init_rwnd=10
 
 # Wifi
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 wifi.interface=wlan0
 
 # Wifi Display (Platform)
