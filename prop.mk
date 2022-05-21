@@ -1,4 +1,3 @@
-#
 # system.prop for vince
 #
 
@@ -161,8 +160,6 @@ persist.hwc.ptor.enable=true \
 ro.opengles.version=196610 \
 ro.qualcomm.cabl=0 \
 ro.vendor.display.cabl=2 \
-ro.hardware.vulkan=adreno \
-ro.hardware.egl=adreno \
 sdm.debug.disable_skip_validate=1 \
 vendor.display.disable_skip_validate=1 \
 vendor.display.use_smooth_motion=1 \
