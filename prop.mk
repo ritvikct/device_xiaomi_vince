@@ -380,3 +380,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.dha_th_rate=2.3 \
     ro.config.sdha_apps_bg_max=64 \
     ro.config.sdha_apps_bg_min=8
+
+# Zygote Preforking
+PRODUCT_SYSTEM_PROPERTIES += \
+persist.device.config.runtime_native.usap_pool_enabled=true
+persist.device_config.runtime_native.usap_pool_enabled=true
