@@ -1,4 +1,3 @@
-
 #
 # Copyright (C) 2017-2019 The LineageOS Project
 #
@@ -15,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_vince.mk
+    $(LOCAL_DIR)/blaze_vince.mk
 
 COMMON_LUNCH_CHOICES := \
-    voltage_vince-user \
-    voltage_vince-userdebug \
-    voltage_vince-eng
+    blaze_vince-user \
+    blaze_vince-userdebug \
+    blaze_vince-eng
