@@ -2,7 +2,3 @@
 
 # BPF
 ro.kernel.ebpf.supported=true
-
-# Camera
-vendor.camera.aux.packagelist=org.lineageos.snap,com.android.camera
-ro.miui.notch=1

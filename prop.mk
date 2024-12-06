@@ -133,7 +133,6 @@ persist.camera.HAL3.enabled=1 \
 vendor.camera.hal1.packagelist=com.android.camera2 \
 persist.vendor.camera.CDS=off \
 persist.vendor.camera.video.CDS=off
-persist.vendor.camera.privapp.list=com.android.camera
 
 # Cne
 PRODUCT_VENDOR_PROPERTIES += \
@@ -392,7 +391,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_PROPERTIES += \
 persist.device.config.runtime_native.usap_pool_enabled=true
 persist.device_config.runtime_native.usap_pool_enabled=true
-
-# Camera
-ro.hardware.camera=xiaomi
-ro.com.google.lens.oem_camera_package=com.android.camera
