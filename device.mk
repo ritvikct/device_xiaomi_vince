@@ -194,7 +194,8 @@ PRODUCT_PACKAGES += \
     libmm-qcamera \
     libdng_sdk.vendor \
     Snap \
-    android.frameworks.displayservice@1.0.vendor
+    android.frameworks.displayservice@1.0.vendor \
+    GCamGOPrebuilt-V2
 
 
 # Consumerir
