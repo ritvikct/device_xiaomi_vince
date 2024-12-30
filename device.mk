@@ -197,6 +197,10 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
     GCamGOPrebuilt-V2
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 
 # Consumerir
 PRODUCT_PACKAGES += \
