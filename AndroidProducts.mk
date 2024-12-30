@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/blaze_vince.mk
+    $(LOCAL_DIR)/carbon_vince.mk
 
 COMMON_LUNCH_CHOICES := \
-    blaze_vince-user \
-    blaze_vince-userdebug \
-    blaze_vince-eng
+    carbon_vince-user \
+    carbon_vince-userdebug \
+    carbon_vince-eng
