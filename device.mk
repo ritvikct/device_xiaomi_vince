@@ -111,8 +111,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service \
-    android.hardware.bluetooth.audio@2.1-impl \
-    audio.a2dp.default \
     audio.bluetooth.default \
     audio.primary.msm8953 \
     audio.r_submix.default \
@@ -151,6 +149,11 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor \
     libhidltransport \
     libhidltransport.vendor
+
+# Bluetooth
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+bluetooth.device.class_of_device=90,2,12 \
+bluetooth.profile.asha.central.enabled=false
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -305,10 +308,6 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0_system \
     android.hidl.manager@1.0 \
     android.hidl.manager@1.0-java
-
-# HW crypto
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
 # IMS
 PRODUCT_PACKAGES += \
