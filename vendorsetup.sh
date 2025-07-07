@@ -1,5 +1,3 @@
-git clone --depth=1 https://github.com/PrajjuS/android_device_xiaomi_vince -b elixir-13 device/xiaomi/vince
-
 git clone --depth=1 https://github.com/PrajjuS/vendor_xiaomi_vince -b elixir-13 vendor/xiaomi/vince
 
 git clone --depth=1 https://github.com/anandhan07/kernel_xiaomi_vince -b 13 kernel/xiaomi/vince
