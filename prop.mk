@@ -200,8 +200,7 @@ persist.service.pcsync.enable=0
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.dpm.feature=1 \
 persist.vendor.dpmhalservice.enable=1 \
-persist.vendor.dpm.loglevel=0 \
-persist.vendor.mwqem.enable=1
+persist.vendor.dpm.loglevel=0
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
