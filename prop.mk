@@ -188,6 +188,15 @@ debug.renderengine.backend=skiaglthreaded \
 debug.hwui.renderer=skiagl \
 renderthread.skia.reduceopstasksplitting=true
 
+# DHA Tunning
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.config.dha_tunnable=1
+
+# Smoothens UI
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.service.lgospd.enable=0 \
+persist.service.pcsync.enable=0
+
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.dpm.feature=1 \
