@@ -48,6 +48,9 @@ TARGET_USES_64_BIT_BINDER := true
 # Prop
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
+# Optimisations
+TARGET_DISPLAY_USE_SMOOTH_MOTION := true
+
 # Kernel
 TARGET_KERNEL_CONFIG := vince-perf_defconfig
 BOARD_KERNEL_BASE := 0x80000000

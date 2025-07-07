@@ -238,6 +238,9 @@ vendor.vidc.enc.disable.pq=true \
 vendor.vidc.enc.disable_bframes=1 \
 vendor.video.disable.ubwc=1
 
+# Optimisations
+vendor.display.use_smooth_motion=1 \
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.vendor.perf.scroll_opt=true \
